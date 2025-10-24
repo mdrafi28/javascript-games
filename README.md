@@ -1,35 +1,37 @@
 # 🎮 JavaScript Games for Beginners — `HacktoberFest 2025` ✨
 
-![Hacktoberfest Banner](https://github.com/azrilpramudia/javascript-games/raw/main/.github/hacktoberfest-banner.png)
+![Hacktoberfest Banner](https://github.com/azrilpramudia/javascript-games/raw/main/.github/banner.png)
 
 ## 🕹️ This Project Is Perfect For Your Pull Request!
 
-🗣 **Hacktoberfest 2025** encourages everyone to join the open-source community — and what’s more fun than contributing to a collection of simple, interactive JavaScript games? 🎯  
+🗣 **Hacktoberfest 2025** encourages everyone to join the open-source community — and what’s more fun than contributing to a collection of simple, interactive JavaScript games? 🎯
 
-📢 **Register at [hacktoberfest.com](https://hacktoberfest.com)** and make **four pull requests (PRs)** between **October 1st – 31st, 2025** to earn **exclusive digital swag and rewards!** 🚀  
+📢 **Register at [hacktoberfest.com](https://hacktoberfest.com)** and make **four pull requests (PRs)** between **October 1st – 31st, 2025** to earn **exclusive digital swag and rewards!** 🚀
 
 ---
 
 ## 💡 About This Repository
 
 Welcome to **JavaScript Games for Beginners!**  
-This repository hosts a collection of fun, beginner-friendly web games built using **pure HTML, CSS, and JavaScript** — no frameworks, no dependencies, just clean and creative code.  
+This repository hosts a collection of fun, beginner-friendly web games built using **pure HTML, CSS, and JavaScript** — no frameworks, no dependencies, just clean and creative code.
 
 These projects are perfect for anyone who wants to:
-- Learn how browser games are built from scratch  
-- Understand DOM manipulation, events, and basic animations  
+
+- Learn how browser games are built from scratch
+- Understand DOM manipulation, events, and basic animations
 - Participate in open-source development during **Hacktoberfest 2025**
 
 ---
 
 ## 📂 Example Games
-| No | Game | Description |
-|----|------|--------------|
-| 1️⃣ | 🐍 **Snake Game** | Control the snake and eat food to grow longer. |
-| 2️⃣ | 💣 **Minesweeper** | Reveal all safe tiles without detonating a bomb. |
-| 3️⃣ | 🧩 **Memory Match** | Flip cards and match identical pairs. |
-| 4️⃣ | 🏓 **Pong** | Classic paddle and ball arcade challenge. |
-| 5️⃣ | 🪂 **Flappy Bird** | Tap to fly through pipes and achieve the highest score! |
+
+| No  | Game                | Description                                             |
+| --- | ------------------- | ------------------------------------------------------- |
+| 1️⃣  | 🐍 **Snake Game**   | Control the snake and eat food to grow longer.          |
+| 2️⃣  | 💣 **Minesweeper**  | Reveal all safe tiles without detonating a bomb.        |
+| 3️⃣  | 🧩 **Memory Match** | Flip cards and match identical pairs.                   |
+| 4️⃣  | 🏓 **Pong**         | Classic paddle and ball arcade challenge.               |
+| 5️⃣  | 🪂 **Flappy Bird**  | Tap to fly through pipes and achieve the highest score! |
 
 > Want to add your own game? Fork this repo and bring your creativity to life! 🎨
 
@@ -37,39 +39,16 @@ These projects are perfect for anyone who wants to:
 
 ## 🧠 Contributing
 
-🎉 We welcome contributions from **everyone**, regardless of experience level!  
+🎉 We welcome contributions from **everyone**, regardless of experience level!
 
-Please read our [Contribution Guidelines](./CONTRIBUTING.md) before starting.  
+Please read our [Contribution Guidelines](./CONTRIBUTING.md) before starting.
 
 You can contribute by:
-- 🕹️ Adding a new JavaScript game  
-- 🐞 Fixing bugs or improving existing games  
-- 💅 Enhancing UI/UX or adding visual effects  
-- 📘 Updating documentation or FAQs  
 
----
-
-### 🪜 How to Contribute
-
-1. **Fork** this repository  
-2. **Clone** your fork  
-   ```bash
-   git clone https://github.com/<your-username>/javascript-games.git
-   ```
-3. **Create a new branch**
-   ```bash
-   git checkout -b feature-new-game
-   ```
-4. **Make your changes**, then commit and push:
-   ```bash
-   git add .
-   git commit -m "Add new game: Tic Tac Toe"
-   git push origin feature-new-game
-   ```
-5. **Submit a Pull Request (PR)** to the `main` branch  
-6. Wait for review — once approved, your PR will be labeled `hacktoberfest-accepted` ✅  
-
----
+- 🕹️ Adding a new JavaScript game
+- 🐞 Fixing bugs or improving existing games
+- 💅 Enhancing UI/UX or adding visual effects
+- 📘 Updating documentation or FAQs
 
 ### ❓ FAQs
 
@@ -79,13 +58,21 @@ If you have any questions, check our [FAQs](./Faqs.md) page for quick answers.
 
 ## 🏷️ Labels for Contributors
 
-| Label | Description |
-|--------|-------------|
-| `hacktoberfest` | Eligible for Hacktoberfest points |
-| `good first issue` | Great for beginners |
-| `help wanted` | Maintainer needs assistance |
-| `enhancement` | Suggestion for new feature or improvement |
-| `bug` | Report or fix a coding issue |
+| Label                    | Description                               |
+| ------------------------ | ----------------------------------------- |
+| `hacktoberfest-accepted` | Eligible for Hacktoberfest points         |
+| `good first issue`       | Great for beginners                       |
+| `help wanted`            | Maintainer needs assistance               |
+| `enhancement`            | Suggestion for new feature or improvement |
+| `bug`                    | Report or fix a coding issue              |
+
+---
+
+## 📜 License
+
+This repository is licensed under the **MIT License**.  
+You’re free to use, modify, and distribute the code as long as proper credit is given.  
+See the [LICENSE](./LICENSE) file for details.
 
 ---
 
@@ -113,19 +100,12 @@ If you have any questions, check our [FAQs](./Faqs.md) page for quick answers.
 
 ---
 
-## 📜 License
-
-This repository is licensed under the **MIT License**.  
-You’re free to use, modify, and distribute the code as long as proper credit is given.  
-See the [LICENSE](./LICENSE) file for details.
-
----
-
 ### 🌟 Support the Project
 
 If you find this project helpful:
-- ⭐ Star the repository  
-- 🧑‍💻 Contribute your own game or fix bugs  
-- 💬 Share this project with friends  
 
-> “Play. Code. Learn. Contribute.” — *Hacktoberfest 2025* 💻🎉
+- ⭐ Star the repository
+- 🧑‍💻 Contribute your own game or fix bugs
+- 💬 Share this project with friends
+
+> “Play. Code. Learn. Contribute.” — _Hacktoberfest 2025_ 💻🎉
