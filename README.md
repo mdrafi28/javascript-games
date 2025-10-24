@@ -1,2 +1,131 @@
-![Hacktoberfest](https://img.shields.io/badge/Hacktoberfest-2025-orange?style=for-the-badge&logo=hacktoberfest)
-![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=for-the-badge)
+# 🎮 JavaScript Games for Beginners — `HacktoberFest 2025` ✨
+
+![Hacktoberfest Banner](https://github.com/azrilpramudia/javascript-games/raw/main/.github/hacktoberfest-banner.png)
+
+## 🕹️ This Project Is Perfect For Your Pull Request!
+
+🗣 **Hacktoberfest 2025** encourages everyone to join the open-source community — and what’s more fun than contributing to a collection of simple, interactive JavaScript games? 🎯  
+
+📢 **Register at [hacktoberfest.com](https://hacktoberfest.com)** and make **four pull requests (PRs)** between **October 1st – 31st, 2025** to earn **exclusive digital swag and rewards!** 🚀  
+
+---
+
+## 💡 About This Repository
+
+Welcome to **JavaScript Games for Beginners!**  
+This repository hosts a collection of fun, beginner-friendly web games built using **pure HTML, CSS, and JavaScript** — no frameworks, no dependencies, just clean and creative code.  
+
+These projects are perfect for anyone who wants to:
+- Learn how browser games are built from scratch  
+- Understand DOM manipulation, events, and basic animations  
+- Participate in open-source development during **Hacktoberfest 2025**
+
+---
+
+## 📂 Example Games
+| No | Game | Description |
+|----|------|--------------|
+| 1️⃣ | 🐍 **Snake Game** | Control the snake and eat food to grow longer. |
+| 2️⃣ | 💣 **Minesweeper** | Reveal all safe tiles without detonating a bomb. |
+| 3️⃣ | 🧩 **Memory Match** | Flip cards and match identical pairs. |
+| 4️⃣ | 🏓 **Pong** | Classic paddle and ball arcade challenge. |
+| 5️⃣ | 🪂 **Flappy Bird** | Tap to fly through pipes and achieve the highest score! |
+
+> Want to add your own game? Fork this repo and bring your creativity to life! 🎨
+
+---
+
+## 🧠 Contributing
+
+🎉 We welcome contributions from **everyone**, regardless of experience level!  
+
+Please read our [Contribution Guidelines](./CONTRIBUTING.md) before starting.  
+
+You can contribute by:
+- 🕹️ Adding a new JavaScript game  
+- 🐞 Fixing bugs or improving existing games  
+- 💅 Enhancing UI/UX or adding visual effects  
+- 📘 Updating documentation or FAQs  
+
+---
+
+### 🪜 How to Contribute
+
+1. **Fork** this repository  
+2. **Clone** your fork  
+   ```bash
+   git clone https://github.com/<your-username>/javascript-games.git
+   ```
+3. **Create a new branch**
+   ```bash
+   git checkout -b feature-new-game
+   ```
+4. **Make your changes**, then commit and push:
+   ```bash
+   git add .
+   git commit -m "Add new game: Tic Tac Toe"
+   git push origin feature-new-game
+   ```
+5. **Submit a Pull Request (PR)** to the `main` branch  
+6. Wait for review — once approved, your PR will be labeled `hacktoberfest-accepted` ✅  
+
+---
+
+### ❓ FAQs
+
+If you have any questions, check our [FAQs](./Faqs.md) page for quick answers.
+
+---
+
+## 🏷️ Labels for Contributors
+
+| Label | Description |
+|--------|-------------|
+| `hacktoberfest` | Eligible for Hacktoberfest points |
+| `good first issue` | Great for beginners |
+| `help wanted` | Maintainer needs assistance |
+| `enhancement` | Suggestion for new feature or improvement |
+| `bug` | Report or fix a coding issue |
+
+---
+
+## 💫 Amazing Contributors
+
+<!-- readme: contributors -start -->
+<a href="https://github.com/azrilpramudia/javascript-games/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=azrilpramudia/javascript-games&refresh=3" />
+</a>
+<!-- readme: contributors -end -->
+
+---
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/hacktoberfest2025--blueviolet" alt="Hacktoberfest Badge"/>
+<img src="https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=flat&color=BC4E99" alt="Star Badge"/>
+<a href="https://github.com/azrilpramudia/javascript-games"><img src="https://img.shields.io/badge/Contributions-welcome-violet.svg?style=flat&logo=git" alt="Contributions"/></a>  
+<a href="https://github.com/azrilpramudia/javascript-games/pulls"><img src="https://img.shields.io/github/issues-pr/azrilpramudia/javascript-games" alt="Pull Requests Badge"/></a>  
+<a href="https://github.com/azrilpramudia/javascript-games/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/azrilpramudia/javascript-games?color=2b9348"></a>
+
+</div>
+
+<!-- Last contributors update: 2025-10-24 14:00:00 UTC -->
+
+---
+
+## 📜 License
+
+This repository is licensed under the **MIT License**.  
+You’re free to use, modify, and distribute the code as long as proper credit is given.  
+See the [LICENSE](./LICENSE) file for details.
+
+---
+
+### 🌟 Support the Project
+
+If you find this project helpful:
+- ⭐ Star the repository  
+- 🧑‍💻 Contribute your own game or fix bugs  
+- 💬 Share this project with friends  
+
+> “Play. Code. Learn. Contribute.” — *Hacktoberfest 2025* 💻🎉
