@@ -36,6 +36,8 @@ These projects are perfect for anyone who wants to:
 
 > Want to add your own game? Fork this repo and bring your creativity to life! 🎨
 
+🎮 Check out all available games in the [Game List](./list-game.md)
+
 ---
 
 ## 🧠 Contributing
