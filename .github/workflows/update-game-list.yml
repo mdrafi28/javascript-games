@@ -1,4 +1,4 @@
-name: 🕹️ Auto Update Game List
+name: 🎮 Smart Game List Updater
 
 on:
   push:
@@ -6,26 +6,51 @@ on:
   pull_request:
     types: [closed]
   workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"  # setiap 1 jam (UTC)
 
 permissions:
-  contents: write  # allow commit back to repo
+  contents: write
 
 jobs:
   update-game-list:
-    name: Generate Game List
+    name: 🧾 Generate Game List
     runs-on: ubuntu-latest
+
     if: github.event_name != 'pull_request' || github.event.pull_request.merged == true
 
     steps:
-      - name: Checkout repository
+      - name: 🧩 Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
+      - name: 📦 Get current folder structure
+        id: current
+        run: |
+          find content/contribution -mindepth 1 -maxdepth 1 -type d | sort > current_games.txt
+          md5sum current_games.txt | cut -d " " -f1 > current_hash.txt
+          echo "hash=$(cat current_hash.txt)" >> $GITHUB_OUTPUT
 
-      - name: Generate game list
+      - name: 💾 Get previous folder hash (if exists)
+        id: previous
+        run: |
+          if [ -f .games_hash ]; then
+            cat .games_hash
+            echo "hash=$(cat .games_hash)" >> $GITHUB_OUTPUT
+          else
+            echo "hash=none" >> $GITHUB_OUTPUT
+          fi
+
+      - name: 🔍 Compare folder list
+        id: compare
+        run: |
+          if [ "${{ steps.current.outputs.hash }}" = "${{ steps.previous.outputs.hash }}" ]; then
+            echo "same=true" >> $GITHUB_OUTPUT
+          else
+            echo "same=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: 🧠 Generate list-game.md (only if changed)
+        if: steps.compare.outputs.same == 'false'
         run: |
           echo "# 🎮 List of JavaScript Games" > list-game.md
           echo "" >> list-game.md
@@ -43,9 +68,12 @@ jobs:
           echo "" >> list-game.md
           echo "> 🧩 Auto-updated on $(date +'%Y-%m-%d %H:%M:%S')" >> list-game.md
 
-      - name: Commit and push changes
+      - name: 💾 Save new hash
+        if: steps.compare.outputs.same == 'false'
         run: |
+          cp current_hash.txt .games_hash
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "GitHub Action"
-          git add list-game.md
-          git diff --quiet && echo "✅ No changes to commit" || (git commit -m "🕹️ Auto update game list" && git push)
+          git add list-game.md .games_hash
+          git commit -m "🎮 Auto update game list" || echo "no changes"
+          git push
