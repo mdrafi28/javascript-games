@@ -116,12 +116,21 @@ Your support makes **JavaScript Games for Beginners** better every day. 💪
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/K2976">
+                    <img src="https://avatars.githubusercontent.com/u/120504065?v=4" width="100;" alt="K2976"/>
+                    <br />
+                    <sub><b>K2976</b></sub>
+                </a>
+            </td>
+            <td align="center">
                 <a href="https://github.com/LakshmiSowmya04">
                     <img src="https://avatars.githubusercontent.com/u/112118575?v=4" width="100;" alt="LakshmiSowmya04"/>
                     <br />
                     <sub><b>LakshmiSowmya04</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
                 <a href="https://github.com/Shachi12Shukla">
                     <img src="https://avatars.githubusercontent.com/u/152056204?v=4" width="100;" alt="Shachi12Shukla"/>
@@ -129,8 +138,6 @@ Your support makes **JavaScript Games for Beginners** better every day. 💪
                     <sub><b>Shachi12Shukla</b></sub>
                 </a>
             </td>
-		</tr>
-		<tr>
             <td align="center">
                 <a href="https://github.com/ZarrarPeshimam">
                     <img src="https://avatars.githubusercontent.com/u/158853189?v=4" width="100;" alt="ZarrarPeshimam"/>
