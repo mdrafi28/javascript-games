@@ -81,8 +81,6 @@ See the [LICENSE](./LICENSE) file for details.
 Thank you to all the awesome people who have contributed to this project! 🎉  
 Your support makes **JavaScript Games for Beginners** better every day. 💪
 
-[![Contributors](https://contrib.rocks/image?repo=azrilpramudia/javascript-games)](https://github.com/azrilpramudia/javascript-games/graphs/contributors)
-
 <!-- readme: contributors -start -->
 <table>
 	<tbody>
