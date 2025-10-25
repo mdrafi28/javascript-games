@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Contrib Readme Action
-        uses: akhilmhdh/contrib-readme-action@v3.0.4
+        uses: akhilmhdh/contrib-readme-action@v2.0.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
