@@ -1,4 +1,4 @@
-name: 🎮 Smart Game List Updater
+name: 🎮 Smart Game List Updater (Auto PR)
 
 on:
   push:
@@ -7,14 +7,15 @@ on:
     types: [closed]
   workflow_dispatch:
   schedule:
-    - cron: "0 * * * *"  # setiap 1 jam (UTC)
+    - cron: "0 * * * *"  # Run every 1 hour (UTC)
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   update-game-list:
-    name: 🧾 Generate Game List
+    name: 🧾 Generate Game List and Create PR
     runs-on: ubuntu-latest
 
     if: github.event_name != 'pull_request' || github.event.pull_request.merged == true
@@ -68,12 +69,20 @@ jobs:
           echo "" >> list-game.md
           echo "> 🧩 Auto-updated on $(date +'%Y-%m-%d %H:%M:%S')" >> list-game.md
 
-      - name: 💾 Save new hash
+      - name: 🪄 Commit and create pull request
         if: steps.compare.outputs.same == 'false'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cp current_hash.txt .games_hash
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "GitHub Action"
+          branch="auto/update-game-list"
+          git checkout -b "$branch"
           git add list-game.md .games_hash
-          git commit -m "🎮 Auto update game list" || echo "no changes"
-          git push
+          git commit -m "🎮 Auto update game list"
+          git push origin "$branch"
+          gh pr create \
+            --title "🎮 Auto update game list" \
+            --body "This PR automatically updates \`list-game.md\` based on new folders in \`content/contribution/\`." \
+            --base main --head "$branch" || echo "⚠️ PR already exists, skipping."
