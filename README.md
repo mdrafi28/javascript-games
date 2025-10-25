@@ -83,6 +83,40 @@ Your support makes **JavaScript Games for Beginners** better every day. 💪
 [![Contributors](https://contrib.rocks/image?repo=azrilpramudia/javascript-games)](https://github.com/azrilpramudia/javascript-games/graphs/contributors)
 
 <!-- readme: contributors -start -->
+<table>
+	<tbody>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/azrilpramudia">
+                    <img src="https://avatars.githubusercontent.com/u/107488372?v=4" width="100;" alt="azrilpramudia"/>
+                    <br />
+                    <sub><b>azrilpramudia</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/spiderOO7">
+                    <img src="https://avatars.githubusercontent.com/u/120004473?v=4" width="100;" alt="spiderOO7"/>
+                    <br />
+                    <sub><b>spiderOO7</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/SunjeetKajla">
+                    <img src="https://avatars.githubusercontent.com/u/206449884?v=4" width="100;" alt="SunjeetKajla"/>
+                    <br />
+                    <sub><b>SunjeetKajla</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/LakshmiSowmya04">
+                    <img src="https://avatars.githubusercontent.com/u/112118575?v=4" width="100;" alt="LakshmiSowmya04"/>
+                    <br />
+                    <sub><b>LakshmiSowmya04</b></sub>
+                </a>
+            </td>
+		</tr>
+	<tbody>
+</table>
 <!-- readme: contributors -end -->
 
 ---
