@@ -25,13 +25,14 @@ These projects are perfect for anyone who wants to:
 
 ## 📂 Example Games
 
-| No  | Game                | Description                                             |
-| --- | ------------------- | ------------------------------------------------------- |
-| 1️⃣  | 🐍 **Snake Game**   | Control the snake and eat food to grow longer.          |
-| 2️⃣  | 💣 **Minesweeper**  | Reveal all safe tiles without detonating a bomb.        |
-| 3️⃣  | 🧩 **Memory Match** | Flip cards and match identical pairs.                   |
-| 4️⃣  | 🏓 **Pong**         | Classic paddle and ball arcade challenge.               |
-| 5️⃣  | 🪂 **Flappy Bird**  | Tap to fly through pipes and achieve the highest score! |
+| No  | Game                    | Description                                             |
+| --- | ----------------------- | ------------------------------------------------------- |
+| 1️⃣  | 🐍 **Snake Game**       | Control the snake and eat food to grow longer.          |
+| 2️⃣  | 💣 **Minesweeper**      | Reveal all safe tiles without detonating a bomb.        |
+| 3️⃣  | 🧩 **Memory Match**     | Flip cards and match identical pairs.                   |
+| 4️⃣  | 🏓 **Pong**             | Classic paddle and ball arcade challenge.               |
+| 5️⃣  | 🪂 **Flappy Bird**      | Tap to fly through pipes and achieve the highest score! |
+| 6️⃣  | ✂️ **Rock Paper Scissors** | Classic hand game with interactive UI and score tracking. |
 
 > Want to add your own game? Fork this repo and bring your creativity to life! 🎨
 
