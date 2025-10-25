@@ -1,34 +1,32 @@
-name: Update Contributors Automatically
+name: 🧑‍💻 Update Contributors Automatically
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
     types: [closed]
-  workflow_dispatch: {}   
+  workflow_dispatch:
 
 permissions:
-  contents: write         
+  contents: write
 
 jobs:
-  contrib-readme:
-    name: Generate Contributor List
+  update-contributors:
     runs-on: ubuntu-latest
-
-    # Opsional: hanya jalan saat PR merged (untuk event pull_request)
-    if: github.event_name != 'pull_request' || github.event.pull_request.merged == true
+    name: 🧾 Generate Contributors List
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Contrib Readme Action
-        uses: akhilmhdh/contrib-readme-action@v3.0.4
+      - name: Update Contributors in README
+        uses: akhilmhdh/contributors-readme-action@v2.3.11
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
+          commit_message: "🧑‍💻 chore: update contributors list"
           image_size: 100
           columns_per_row: 6
           readme_path: "README.md"
           use_username: true
-          commit_message: "chore: update contributors list"
