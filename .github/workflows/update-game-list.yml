@@ -1,0 +1,51 @@
+name: 🕹️ Auto Update Game List
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    types: [closed]
+  workflow_dispatch:
+
+permissions:
+  contents: write  # allow commit back to repo
+
+jobs:
+  update-game-list:
+    name: Generate Game List
+    runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request' || github.event.pull_request.merged == true
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Generate game list
+        run: |
+          echo "# 🎮 List of JavaScript Games" > list-game.md
+          echo "" >> list-game.md
+          echo "Automatically generated from the [content/contribution](./content/contribution) folder." >> list-game.md
+          echo "" >> list-game.md
+          echo "| No. | Game Title | Path |" >> list-game.md
+          echo "|:--:|:----------------|:----------------------------|" >> list-game.md
+          i=1
+          for d in content/contribution/*/ ; do
+            game_name=$(basename "$d")
+            title=$(echo "$game_name" | sed -r 's/-/ /g' | sed -r 's/\b(.)/\u\1/g')
+            echo "| $i | **$title** | [./$d](./$d) |" >> list-game.md
+            ((i++))
+          done
+          echo "" >> list-game.md
+          echo "> 🧩 Auto-updated on $(date +'%Y-%m-%d %H:%M:%S')" >> list-game.md
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "GitHub Action"
+          git add list-game.md
+          git diff --quiet && echo "✅ No changes to commit" || (git commit -m "🕹️ Auto update game list" && git push)
