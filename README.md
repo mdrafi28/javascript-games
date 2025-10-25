@@ -58,13 +58,12 @@ If you have any questions, check our [FAQs](./Faqs.md) page for quick answers.
 
 ## 🏷️ Labels for Contributors
 
-| Label                    | Description                               |
-| ------------------------ | ----------------------------------------- |
-| `hacktoberfest-accepted` | Eligible for Hacktoberfest points         |
-| `good first issue`       | Great for beginners                       |
-| `help wanted`            | Maintainer needs assistance               |
-| `enhancement`            | Suggestion for new feature or improvement |
-| `bug`                    | Report or fix a coding issue              |
+| Label                    | Description                       |
+| ------------------------ | --------------------------------- |
+| `hacktoberfest-accepted` | Eligible for Hacktoberfest points |
+| `good first issue`       | Great for beginners               |
+| `help wanted`            | Maintainer needs assistance       |
+| `bug`                    | Report or fix a coding issue      |
 
 ---
 

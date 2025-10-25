@@ -1,0 +1,28 @@
+name: 🧑‍💻 Update Contributors Automatically
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [closed]
+
+jobs:
+  contrib-readme:
+    name: 🧾 Generate Contributor List
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Contrib Readme Action
+        uses: akhilmhdh/contrib-readme-action@v3.0.4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          image_size: 100
+          commit_message: "🧑‍💻 Update contributors list"
+          columns_per_row: 6
+          readme_path: "README.md"
+          use_username: true
